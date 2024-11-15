@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+/* landing page */
+
+*{
+    margin:0;
+    padding :0;
+    box-sizing:border-box;
+    font-family: 'montserat' , san-serif;
+  }
+  html,body{
+    height:100%;
+    width: 100%;
+    background-color:#000;
+    color:#fff;
+  }
+  #main{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:relative;
+  }
+  .hero{
+    height:65vh;
+    width: 80vw;
+    background-color:#fff;
+  }
+  .dets{
+    height:30vh;
+    width:90vw;
+    background-color: lightgoldenrodyellow;
+  }
+  .nav{
+    height:10vh;
+    width:100vw;
+    background-color: green;
+    position:fixed;
+    left:0;
+    top:0;
+
+  }
+
+
+
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form input, form button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+
