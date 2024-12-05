@@ -1,4 +1,16 @@
-<form method="POST" action="login.php">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="login-body">
+
+
+
+<form method="POST" action="login.php"  class="lform">
     <input type="text" name="username" placeholder="Username" required>
     <input type="password" name="password" placeholder="Password" required>
     <button type="submit" name="login">Login</button>
@@ -7,10 +19,15 @@
 
 
 
+    
+</body>
+</html>
+
+
 <?php
 session_start();
 include 'db.php';
-
+include 'header.php';
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -35,7 +52,7 @@ if (isset($_POST['login'])) {
             }
             exit();
         } else {
-            echo "Incorrect password.";
+            echo "<script> alert('Incorrect password.')</script>";
         }
     } else {
         echo "No user found with that username.";

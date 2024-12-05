@@ -1,86 +1,89 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'poppins' , sans-serif;
+
+
+
+/* login */
+
+
+
+#login-body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, lightskyblue, blue, violet, pink);
+  background-size: 400% 400%; 
+  animation: gradientMove 6s ease infinite;
+  font-family: Arial, sans-serif;
 }
 
-/* landing page */
-
-*{
-    margin:0;
-    padding :0;
-    box-sizing:border-box;
-    font-family: 'montserat' , san-serif;
-  }
-  html,body{
-    height:100%;
-    width: 100%;
-    background-color:#000;
-    color:#fff;
-  }
-  #main{
-    margin-top: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position:relative;
-  }
-  .hero{
-    height:65vh;
-    width: 80vw;
-    background-color:#fff;
-  }
-  .dets{
-    height:30vh;
-    width:90vw;
-    background-color: lightgoldenrodyellow;
-  }
-  .nav{
-    height:10vh;
-    width:100vw;
-    background-color: green;
-    position:fixed;
-    left:0;
-    top:0;
-
-  }
-
-
-
-
-.dashboard {
-    display: flex;
-    gap: 20px;
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.lform {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 
+              0 6px 10px rgba(0, 0, 0, 0.15); 
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
-.card {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
+
+
+.lform:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 
+              0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-form input, form button {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
+
+.lform input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.lform input:focus {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1.03); 
 }
 
-table, th, td {
-    border: 1px solid #ccc;
+.lform button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, violet, pink);
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
+.lform button:hover {
+  background: linear-gradient(135deg, pink, violet);
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
+
+.reg1{
+  font-size: .6vw;
+} 
 
 

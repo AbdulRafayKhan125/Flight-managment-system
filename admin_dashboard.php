@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include 'header.php';
 // Ensure the user is logged in as admin
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
     header("Location: login.php");

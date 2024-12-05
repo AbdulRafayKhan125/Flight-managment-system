@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $db = 'flight_management';
-$user = 'root'; // default username for localhost
-$pass = ''; // leave empty if there's no password
+$user = 'root'; 
+$pass = ''; 
 
 $conn = new mysqli($host, $user, $pass, $db);
 
