@@ -35,6 +35,7 @@ $salesCount = $salesResult->fetch_row()[0];
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            margin-top:35vh;
         }
         header {
             background-color: #333;
@@ -44,6 +45,8 @@ $salesCount = $salesResult->fetch_row()[0];
         }
         .dashboard {
             display: flex;
+            /* align-items:center; */
+            /* margin-top:20vh; */
             justify-content: space-around;
             margin: 30px;
         }
@@ -109,7 +112,7 @@ $salesCount = $salesResult->fetch_row()[0];
         <div class="card">
             <h3>Total Tickets Sold</h3>
             <p><?php echo $salesCount; ?></p>
-            <a href="view_bookings.php">View Bookings</a>
+            <a href="manage_flights.php">View Bookings</a>
         </div>
 
         <!-- Manage Flights Card -->

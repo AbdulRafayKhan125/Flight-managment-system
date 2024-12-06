@@ -107,12 +107,12 @@ a.btn-book:hover {
 </head>
 <body>
 
-<!-- Loading Animation -->
+
 <div id="loadingScreen" class="loading-screen">
     <div class="loader"></div>
 </div>
 
-<!-- Main Content -->
+
 <main>
     <section class="hero">
         <h1>Welcome to Flight Booking</h1>

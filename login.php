@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="login-body">
@@ -11,9 +11,12 @@
 
 
 <form method="POST" action="login.php"  class="lform">
+    <h1>Login Here</h1>
     <input type="text" name="username" placeholder="Username" required>
     <input type="password" name="password" placeholder="Password" required>
     <button type="submit" name="login">Login</button>
+    <h4>don't have account <a href="register.php">Register</a></h4>
+
 </form>
 
 

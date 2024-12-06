@@ -65,15 +65,15 @@ nav ul li a:hover {
 <header>
     <div class="navbar">
         <div class="logo">
-            <a href="index.php">Logo</a> <!-- This will link to the homepage -->
+            <a href="index.php">FMS</a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="register.php">Register</a></li>
-                <li><a href="about.php">About Us</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                
+                
             </ul>
         </nav>
     </div>

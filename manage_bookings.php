@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
     exit();
 }
 
-// Include database connection
+
 include 'db.php';
 
 // Handle booking cancellation

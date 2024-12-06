@@ -210,7 +210,7 @@ $result = $conn->query($query);
                 <input type="text" name="from_location" placeholder="From Location" required>
                 <input type="text" name="to_location" placeholder="To Location" required>
                 <input type="number" name="seat_count" placeholder="Seat Count" required>
-                <input type="number" step="0.01" name="price" placeholder="Ticket Price" required>
+                <input type="number" step="0.01" name="price" placeholder="Ticket Price in $" required>
                 <input type="datetime-local" name="schedule" required>
                 <button type="submit" name="add_flight" class="btn">Add Flight</button>
             </form>
