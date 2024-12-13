@@ -35,9 +35,9 @@ $salesCount = $salesResult->fetch_row()[0];
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            margin-top:35vh;
+            margin-top:13vh;
         }
-        header {
+        .header {
             background-color: #333;
             color: white;
             padding: 15px 0;
@@ -94,11 +94,10 @@ $salesCount = $salesResult->fetch_row()[0];
     </style>
 </head>
 <body>
-
-    <header>
+     <div class="header">
         <h1>Welcome, <?php echo $_SESSION['username']; ?>!</h1>
         <h2>Admin Dashboard</h2>
-    </header>
+    </div>
 
     <div class="dashboard">
         <!-- Total Flights Card -->
@@ -118,7 +117,7 @@ $salesCount = $salesResult->fetch_row()[0];
         <!-- Manage Flights Card -->
         <div class="card">
             <h3>Manage Flights</h3>
-            <a href="manage_flights.php">View / Add Flights</a>
+            <a href="manage_bookings.php">View / Add Flights</a>
         </div>
     </div>
 

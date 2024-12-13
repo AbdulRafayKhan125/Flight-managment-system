@@ -71,7 +71,7 @@ $result = $conn->query($sql);
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            margin:20vh auto;
         }
         .btn-back {
             display: block;

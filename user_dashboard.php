@@ -33,25 +33,27 @@ $booking_result = $booking_stmt->get_result();
     <title>User Dashboard</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
         .dashboard-container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 30px auto;
             padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         h2, h3 {
             color: #333;
+            font-weight: 600;
         }
-        .flight-table, .booking-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 30px;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
+        a {
+            text-decoration: none;
+            color: #4CAF50;
         }
         .btn {
             padding: 10px 20px;
@@ -59,37 +61,61 @@ $booking_result = $booking_stmt->get_result();
             color: white;
             text-decoration: none;
             border-radius: 5px;
-        }
-        .btn-danger {
-            background-color: red;
+            transition: background-color 0.3s ease;
         }
         .btn:hover {
             background-color: #45a049;
         }
+        .btn-danger {
+            background-color: #f44336;
+        }
         .btn-danger:hover {
-            background-color: darkred;
+            background-color: #d32f2f;
+        }
+
+        /* Responsive Table */
+        .flight-table, .booking-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
         }
 
         /* Modal styles */
         .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Fixed/sticky position */
-            z-index: 1; /* Sit on top */
+            display: none;
+            position: fixed;
+            z-index: 1;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.4); /* Background color with transparency */
+            background-color: rgba(0, 0, 0, 0.4);
             overflow: auto;
+            transition: opacity 0.4s ease;
         }
 
         .modal-content {
-            background-color: white;
+            background-color: #fff;
             margin: 15% auto;
-            padding: 20px;
+            padding: 25px;
             border: 1px solid #888;
             width: 50%;
             border-radius: 10px;
+            animation: fadeIn 0.3s ease-in-out;
         }
 
         .close {
@@ -97,8 +123,8 @@ $booking_result = $booking_stmt->get_result();
             font-size: 28px;
             font-weight: bold;
             position: absolute;
-            right: 10px;
-            top: 0;
+            right: 20px;
+            top: 20px;
         }
 
         .close:hover,
@@ -107,6 +133,18 @@ $booking_result = $booking_stmt->get_result();
             text-decoration: none;
             cursor: pointer;
         }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-open {
+            opacity: 1;
+        }
+
+
     </style>
 </head>
 <body>
@@ -183,7 +221,7 @@ $booking_result = $booking_stmt->get_result();
                     <input type="hidden" id="flight_id" name="flight_id">
                     <label for="num_seats">Select number of seats:</label>
                     <input type="number" id="num_seats" name="num_seats" min="1" max="" required><br><br>
-                    <p>Total Payment: $<span id="total_payment">0</span></p>
+                    <p>Total Payment:<span id="total_payment">0</span></p>
                     <input type="submit" value="Book Flight" class="btn">
                 </form>
             </div>
