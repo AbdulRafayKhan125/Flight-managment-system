@@ -27,6 +27,11 @@ body {
     border-radius: 8px;
     margin-bottom: 20px;
 }
+.header>a{
+    position:absolute;
+    right:5%    ;
+    top:8%;
+}
 
 .header h1 {
     margin: 0;
@@ -48,6 +53,7 @@ body {
 
 /* Flight Form Styles */
 .flight-form {
+    margin-top:100px;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
