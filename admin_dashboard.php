@@ -117,7 +117,7 @@ $salesCount = $salesResult->fetch_row()[0];
         <!-- Manage Flights Card -->
         <div class="card">
             <h3>Manage Flights</h3>
-            <a href="manage_bookings.php">View / Add Flights</a>
+            <a href="manage_bookings.php">View Flights</a>
         </div>
     </div>
 
